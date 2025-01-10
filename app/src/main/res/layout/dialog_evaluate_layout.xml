@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bg"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_permission_dialog_bg">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_evaluate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13.7dp"
+            android:gravity="center"
+            android:text="@string/evaluate_title"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="@string/evaluate_text"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24.3dp"
+            android:adjustViewBounds="true"
+            android:padding="4dp"
+            android:src="@drawable/selector_evaluate_star"
+            app:layout_constraintEnd_toStartOf="@+id/star2"
+            app:layout_constraintStart_toStartOf="@+id/text"
+            app:layout_constraintTop_toBottomOf="@+id/text" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="4dp"
+            android:src="@drawable/selector_evaluate_star"
+            app:layout_constraintBottom_toBottomOf="@+id/star1"
+            app:layout_constraintEnd_toStartOf="@+id/star3"
+            app:layout_constraintStart_toEndOf="@+id/star1"
+            app:layout_constraintTop_toTopOf="@+id/star1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="4dp"
+            android:src="@drawable/selector_evaluate_star"
+            app:layout_constraintBottom_toBottomOf="@+id/star1"
+            app:layout_constraintEnd_toStartOf="@+id/star4"
+            app:layout_constraintStart_toEndOf="@+id/star2"
+            app:layout_constraintTop_toTopOf="@+id/star1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/star4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="4dp"
+            android:src="@drawable/selector_evaluate_star"
+            app:layout_constraintBottom_toBottomOf="@+id/star1"
+            app:layout_constraintEnd_toStartOf="@+id/star5"
+            app:layout_constraintStart_toEndOf="@+id/star3"
+            app:layout_constraintTop_toTopOf="@+id/star1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/star5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="4dp"
+            android:src="@drawable/selector_evaluate_star"
+            app:layout_constraintBottom_toBottomOf="@+id/star1"
+            app:layout_constraintEnd_toEndOf="@+id/text"
+            app:layout_constraintStart_toEndOf="@+id/star4"
+            app:layout_constraintTop_toTopOf="@+id/star1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/hand"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintStart_toStartOf="@+id/star5"
+            app:layout_constraintTop_toTopOf="@+id/star5"
+            app:srcCompat="@mipmap/img_hand" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="17.7dp"
+            android:background="@drawable/selector_evaluate_button_bg"
+            android:gravity="center"
+            android:text="@string/evaluate_feedback"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/star1"
+            app:layout_constraintVertical_bias="1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:scaleType="center"
+            android:src="@mipmap/icon_close"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

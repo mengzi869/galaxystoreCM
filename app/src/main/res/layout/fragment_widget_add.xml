@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f7f7">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/topLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="43dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ico_back_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ic_back"
+        style="@style/SelectedItemBorderless"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/topLeft"
+        app:layout_constraintEnd_toEndOf="@+id/topLeft"
+        app:layout_constraintStart_toStartOf="@+id/topLeft"
+        app:layout_constraintTop_toTopOf="@+id/topLeft" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/widget"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/topLeft"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/topLeft"
+        app:layout_constraintTop_toTopOf="@+id/topLeft" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/add_widget_tip"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLeft" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_manually"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:drawableEnd="@mipmap/icon_widget_enter"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/add_manually"
+        android:textColor="#3e84ff"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tip" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_manually">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/widget1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/widget_4_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view_bg1"
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_widget_top"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/widget1" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_phone"
+                app:layout_constraintBottom_toBottomOf="@+id/view_bg1"
+                app:layout_constraintEnd_toEndOf="@+id/view_bg1"
+                app:layout_constraintStart_toStartOf="@+id/view_bg1" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:src="@mipmap/img_show_1"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_phone"
+                app:layout_constraintEnd_toEndOf="@+id/iv_phone"
+                app:layout_constraintStart_toStartOf="@+id/iv_phone" />
+
+            <View
+                android:id="@+id/view_bg2"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_widget_bottom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_bg1" />
+
+            <com.clean888.cleansuper.cleaner.ui.widget.ZZC
+                android:id="@+id/tv_add_all"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/shape_widget_add"
+                android:drawableStart="@mipmap/icon_widget_add"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/widget_add_home"
+                android:textColor="#3e84ff"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_bg2"
+                app:layout_constraintEnd_toEndOf="@+id/view_bg2"
+                app:layout_constraintStart_toStartOf="@+id/view_bg2"
+                app:layout_constraintTop_toTopOf="@+id/view_bg2" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/widget2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/widget_4_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_bg2" />
+
+            <View
+                android:id="@+id/view_bg3"
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_widget_top"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/widget2" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_show_2"
+                app:layout_constraintBottom_toBottomOf="@+id/view_bg3"
+                app:layout_constraintEnd_toEndOf="@+id/view_bg3"
+                app:layout_constraintStart_toStartOf="@+id/view_bg3"
+                app:layout_constraintTop_toTopOf="@+id/view_bg3" />
+
+            <View
+                android:id="@+id/view_bg4"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_widget_bottom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_bg3" />
+
+            <com.clean888.cleansuper.cleaner.ui.widget.ZZC
+                android:id="@+id/tv_add_clean"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/shape_widget_add"
+                android:drawableStart="@mipmap/icon_widget_add"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/widget_add_home"
+                android:textColor="#3e84ff"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_bg4"
+                app:layout_constraintEnd_toEndOf="@+id/view_bg4"
+                app:layout_constraintStart_toStartOf="@+id/view_bg4"
+                app:layout_constraintTop_toTopOf="@+id/view_bg4" />
+
+            <View
+                android:id="@+id/view_bg5"
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_widget_top"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_bg4" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_show_3"
+                app:layout_constraintBottom_toBottomOf="@+id/view_bg5"
+                app:layout_constraintEnd_toEndOf="@+id/view_bg5"
+                app:layout_constraintStart_toStartOf="@+id/view_bg5"
+                app:layout_constraintTop_toTopOf="@+id/view_bg5" />
+
+            <View
+                android:id="@+id/view_bg6"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_widget_bottom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_bg5" />
+
+            <com.clean888.cleansuper.cleaner.ui.widget.ZZC
+                android:id="@+id/tv_add_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/shape_widget_add"
+                android:drawableStart="@mipmap/icon_widget_add"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/widget_add_home"
+                android:textColor="#3e84ff"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_bg6"
+                app:layout_constraintEnd_toEndOf="@+id/view_bg6"
+                app:layout_constraintStart_toStartOf="@+id/view_bg6"
+                app:layout_constraintTop_toTopOf="@+id/view_bg6" />
+
+            <View
+                android:id="@+id/view_bg7"
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_widget_top"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_bg6" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_show_4"
+                app:layout_constraintBottom_toBottomOf="@+id/view_bg7"
+                app:layout_constraintEnd_toEndOf="@+id/view_bg7"
+                app:layout_constraintStart_toStartOf="@+id/view_bg7"
+                app:layout_constraintTop_toTopOf="@+id/view_bg7" />
+
+            <View
+                android:id="@+id/view_bg8"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_widget_bottom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_bg7" />
+
+            <com.clean888.cleansuper.cleaner.ui.widget.ZZC
+                android:id="@+id/tv_add_cpu"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/shape_widget_add"
+                android:drawableStart="@mipmap/icon_widget_add"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/widget_add_home"
+                android:textColor="#3e84ff"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_bg8"
+                app:layout_constraintEnd_toEndOf="@+id/view_bg8"
+                app:layout_constraintStart_toStartOf="@+id/view_bg8"
+                app:layout_constraintTop_toTopOf="@+id/view_bg8" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

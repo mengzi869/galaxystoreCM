@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f7f8">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/topLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="43dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ico_back_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ic_back"
+        style="@style/SelectedItemBorderless"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/topLeft"
+        app:layout_constraintEnd_toEndOf="@+id/topLeft"
+        app:layout_constraintStart_toStartOf="@+id/topLeft"
+        app:layout_constraintTop_toTopOf="@+id/topLeft" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/title_widget_manually"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/topLeft"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/topLeft"
+        app:layout_constraintTop_toTopOf="@+id/topLeft" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLeft">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/widget_manually_bg">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_num1"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/widget_manually_num_bg"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_tip1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/title_widget_tip1"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_num1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_des1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:text="@string/title_widget_des1"
+                    android:textColor="#8f9ca8"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_tip1" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_bg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@mipmap/img_widget_des1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_des1" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_left1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:paddingBottom="13dp"
+                    android:text="@string/tip_widget_left1"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/line1"
+                    app:layout_constraintStart_toStartOf="@+id/iv_bg1"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_bg1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_right1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:paddingBottom="13dp"
+                    android:text="@string/tip_widget_right1"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/iv_bg1"
+                    app:layout_constraintStart_toStartOf="@+id/line1"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_bg1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/widget_manually_bg">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_num2"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/widget_manually_num_bg"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_tip2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/title_widget_tip2"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_num2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_des2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:text="@string/title_widget_des2"
+                    android:textColor="#8f9ca8"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_tip2" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_bg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@mipmap/img_widget_des2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_des2" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_left2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:paddingBottom="13dp"
+                    android:text="@string/tip_widget_left2"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/line2"
+                    app:layout_constraintStart_toStartOf="@+id/iv_bg2"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_bg2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_right2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:paddingBottom="13dp"
+                    android:text="@string/tip_widget_right2"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/iv_bg2"
+                    app:layout_constraintStart_toStartOf="@+id/line2"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_bg2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

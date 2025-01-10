@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#f5f7f7"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_notification_icon"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:scaleType="fitCenter" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_notification_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:checked="true"
+        android:thumb="@drawable/shape_settings_thumb"
+        app:track="@drawable/shape_settings_track" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="u_ic">@mipmap/icon</drawable>
+    <drawable name="u_small_ic">@mipmap/icon_round</drawable>
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false">
+        <layer-list>
+            <item
+                android:left="1dp"
+                android:top="2dp"
+                android:right="1dp">
+                <shape android:shape="oval">
+                    <solid android:color="#10cccccc"/>
+                    <size
+                        android:height="18dp"
+                        android:width="18dp"/>
+                </shape>
+            </item>
+            <item
+                android:left="1.3dp"
+                android:top="2dp"
+                android:right="1.3dp"
+                android:bottom="0.5dp">
+                <shape android:shape="oval">
+                    <solid android:color="#20cccccc"/>
+                    <size
+                        android:height="21dp"
+                        android:width="21dp"/>
+                </shape>
+            </item>
+            <item
+                android:left="1.6dp"
+                android:top="2dp"
+                android:right="1.6dp"
+                android:bottom="1dp">
+                <shape android:shape="oval">
+                    <solid android:color="#30cccccc"/>
+                    <size
+                        android:height="20dp"
+                        android:width="20dp"/>
+                </shape>
+            </item>
+            <item
+                android:left="1.9dp"
+                android:top="2dp"
+                android:right="1.9dp"
+                android:bottom="1.5dp">
+                <shape android:shape="oval">
+                    <solid android:color="#10cccccc"/>
+                    <size
+                        android:height="19.5dp"
+                        android:width="19.5dp"/>
+                </shape>
+            </item>
+            <item
+                android:left="2.2dp"
+                android:top="2dp"
+                android:right="2.2dp"
+                android:bottom="2dp">
+                <shape android:shape="oval">
+                    <solid android:color="#50cccccc"/>
+                    <size
+                        android:height="19dp"
+                        android:width="19dp"/>
+                </shape>
+            </item>
+            <item
+                android:left="2.5dp"
+                android:top="2.5dp"
+                android:right="2.5dp"
+                android:bottom="2.5dp">
+                <shape android:shape="oval">
+                    <solid android:color="@color/white"/>
+                    <size
+                        android:height="18dp"
+                        android:width="18dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_checked="true">
+        <layer-list>
+            <item
+                android:left="1dp"
+                android:top="2dp"
+                android:right="1dp">
+                <shape android:shape="oval">
+                    <solid android:color="#10cccccc"/>
+                    <size
+                        android:height="18dp"
+                        android:width="18dp"/>
+                </shape>
+            </item>
+            <item
+                android:left="1.3dp"
+                android:top="2dp"
+                android:right="1.3dp"
+                android:bottom="0.5dp">
+                <shape android:shape="oval">
+                    <solid android:color="#20cccccc"/>
+                    <size
+                        android:height="21dp"
+                        android:width="21dp"/>
+                </shape>
+            </item>
+            <item
+                android:left="1.6dp"
+                android:top="2dp"
+                android:right="1.6dp"
+                android:bottom="1dp">
+                <shape android:shape="oval">
+                    <solid android:color="#30cccccc"/>
+                    <size
+                        android:height="20dp"
+                        android:width="20dp"/>
+                </shape>
+            </item>
+            <item
+                android:left="1.9dp"
+                android:top="2dp"
+                android:right="1.9dp"
+                android:bottom="1.5dp">
+                <shape android:shape="oval">
+                    <solid android:color="#10cccccc"/>
+                    <size
+                        android:height="19.5dp"
+                        android:width="19.5dp"/>
+                </shape>
+            </item>
+            <item
+                android:left="2.2dp"
+                android:top="2dp"
+                android:right="2.2dp"
+                android:bottom="2dp">
+                <shape android:shape="oval">
+                    <solid android:color="#50cccccc"/>
+                    <size
+                        android:height="19dp"
+                        android:width="19dp"/>
+                </shape>
+            </item>
+            <item
+                android:left="2.5dp"
+                android:top="2.5dp"
+                android:right="2.5dp"
+                android:bottom="2.5dp">
+                <shape android:shape="oval">
+                    <solid android:color="#1a73e8"/>
+                    <size
+                        android:height="18dp"
+                        android:width="18dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

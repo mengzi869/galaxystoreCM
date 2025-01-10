@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_REMOTE_MESSAGING" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+
+    <application
+        android:name="com.clean888.cleansuper.cleaner.SuperApplication"
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name_main"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionBarTheme"
+        android:usesCleartextTraffic="false"
+        tools:targetApi="p">
+
+<!--        <uses-library android:name="org.apache.http.legacy" android:required="false"/>-->
+
+        <activity
+            android:name="com.clean888.cleansuper.cleaner.ui.SplashActivity"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+
+        <activity
+            android:name="com.clean888.cleansuper.cleaner.ui.MainActivity"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+
+        <activity
+            android:name="com.clean888.cleansuper.cleaner.ui.activity.ZZS"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+
+        <activity
+            android:name="com.clean888.cleansuper.cleaner.ui.activity.CpuCoolerActivity"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+
+        <activity
+            android:name="com.clean888.cleansuper.cleaner.ui.activity.BatterySaverActivity"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+        <activity
+            android:name=".ui.activity.LargeFileCleanActivity"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+        <activity
+            android:name=".ui.activity.ZZY"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Float_Permission_TransparentTheme">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+        <activity
+            android:name=".ui.activity.ZZT"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+
+        <activity
+            android:name=".ui.activity.BAAY"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+
+        <activity
+            android:name=".ui.activity.BAAX"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+
+        <activity
+            android:name=".ui.activity.PhoneBoostActivity"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+
+        <service
+            android:name=".service.BAAI"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType=""
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ui.activity.BAAZ"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+
+        <service
+            android:name=".service.BAAU"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/quickboost_wallpaper" />
+        </service>
+
+        <activity
+            android:name=".ui.activity.BAAW"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+
+        <activity
+            android:name=".ui.activity.BAAV"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:launchMode="singleInstance"
+            android:theme="@style/WallpaperActivity">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+
+
+        <!--Widget-->
+        <activity
+            android:name=".ui.activity.BAAF"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+        <activity
+            android:name=".ui.activity.BAAG"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+        <activity
+            android:name=".ui.activity.SettingsActivity"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+        <activity
+            android:name=".ui.activity.AboutUsActivity"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+        <activity
+            android:name=".ui.activity.AgreemenUrlActivity"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+
+        <receiver
+            android:name=".provider.BABA"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/battery_app_widget" />
+        </receiver>
+
+        <receiver
+            android:name=".provider.BABB"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/clean_app_widget" />
+        </receiver>
+
+        <receiver
+            android:name=".provider.BABC"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/cpu_app_widget" />
+        </receiver>
+
+        <receiver
+            android:name=".provider.BABD"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/all_app_widget" />
+        </receiver>
+
+        <service
+            android:name=".service.BAAH"
+            android:foregroundServiceType="" />
+
+        <activity
+            android:name=".ui.dialog.BAAJ"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:taskAffinity=":.remindtask"
+            android:theme="@style/FullScreenDialogTheme" />
+
+        <activity
+            android:name=".ui.dialog.BAAK"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:taskAffinity=":.remindtask"
+            android:theme="@style/FullScreenDialogTheme" />
+
+        <activity
+            android:name=".ui.dialog.BAAL"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:taskAffinity=":.remindtask"
+            android:theme="@style/FullScreenDialogTheme">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+
+        <activity
+            android:name=".ui.dialog.BAAP"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:taskAffinity=":.remindtask"
+            android:theme="@style/ActivityDialogTheme">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+
+        <activity
+            android:name=".ui.dialog.ZZA"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:taskAffinity=":.remindtask"
+            android:theme="@style/FullScreenDialogTheme">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+
+        <receiver
+            android:name=".receiver.BAAO"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.BAAN" />
+
+        <activity
+            android:name=".ui.activity.BAAE"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+
+        <activity
+            android:name=".ui.activity.BAAM"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation" />
+
+        <service
+            android:name=".service.PackageActionService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.activity.BAAD"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="in_app"
+                android:value="in_app" />
+        </activity>
+
+        <service
+            android:name="com.bytedance.sdk.openadsdk.job_services.MJobService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.services.MContentProvider"
+            android:authorities="@string/k_provi"
+            android:exported="false"
+            android:syncable="true" />
+
+        <service
+            android:name="com.bytedance.sdk.openadsdk.services.MService1"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/oa" />
+        </service>
+
+        <service
+            android:name="com.bytedance.sdk.openadsdk.services.MService2"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/sa" />
+        </service>
+
+        <service
+            android:name=".service.BAAS"
+            android:enabled="true"
+            android:exported="true"/>
+    </application>
+
+</manifest>

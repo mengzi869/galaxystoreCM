@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="true"
+        android:id="@+id/state_on"
+        android:drawable="@mipmap/ic_home_sel"/>
+    <item
+        android:id="@+id/state_off"
+        android:drawable="@mipmap/ic_home_unsel"/>
+    <transition
+        android:drawable="@mipmap/ic_home_unsel"
+        android:toId="@+id/state_on"
+        android:fromId="@+id/state_off"/>
+</animated-selector>

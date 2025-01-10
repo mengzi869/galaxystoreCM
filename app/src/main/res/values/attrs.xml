@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="defaultNavHost" format="boolean" />
+    <attr name="appPackageName" format="string" />
+    <attr name="categoryId" format="integer" />
+    <attr name="appRank" format="integer" />
+
+    <declare-styleable name="Z1">
+        <attr name="loading_color" format="color" />
+        <attr name="loading_shadow_color" format="color" />
+        <attr name="loading_width" format="dimension" />
+        <attr name="loading_shadow_position" format="integer" />
+        <attr name="loading_speed" format="integer" />
+    </declare-styleable>
+
+    <attr name="bar_height" format="dimension"></attr>
+    <attr name="bar_width" format="dimension"></attr>
+    <attr name="bg_color" format="color"></attr>
+    <attr name="progress_color" format="color"></attr>
+    <attr name="start_angle" format="float"></attr>
+    <attr name="sweep_angle" format="float"></attr>
+
+</resources>

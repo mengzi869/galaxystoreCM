@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<!--    如果您的应用并不面向 Google Play 商店，那么请添加下列权限，以读取设备的互联网连接状态：-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+<!--    Adjust SDK 默认包含 com.google.android.gms.AD_ID 权限。如果您要让应用符合 COPPA (儿童在线隐私保护法) 规定，或者应用并不面向 Google Play 商店，请务必使用 remove 命令移除权限。-->
+<!--    <uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove"/>-->
+    <application>
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+    </application>
+
+</manifest>

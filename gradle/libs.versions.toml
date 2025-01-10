@@ -1,0 +1,51 @@
+[versions]
+androidxFragmentFragment = "1.8.5"
+comAirbnbAndroidLottie2 = "6.6.0"
+gson = "2.10.1"
+json = "20240303"
+coreKtx = "1.10.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+lifecycleRuntimeKtx = "2.6.1"
+activityCompose = "1.8.0"
+composeBom = "2024.04.01"
+liveEventBusX = "1.8.14"
+materialVersion = "1.12.0"
+roomRuntime = "2.7.0-alpha11"
+rxjava = "3.1.9"
+utilcodex = "1.31.1"
+constraintlayout = "2.2.0"
+androidxAppcompat = "1.7.0"
+#agp = "8.0.2"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-fragment-fragment3 = { module = "androidx.fragment:fragment", version.ref = "androidxFragmentFragment" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+com-airbnb-android-lottie3 = { module = "com.airbnb.android:lottie", version.ref = "comAirbnbAndroidLottie2" }
+google-material = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+json = { module = "org.json:json", version.ref = "json" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+live-event-bus = { module = "com.github.michaellee123:LiveEventBus", version.ref = "liveEventBusX" }
+rxjava = { module = "io.reactivex.rxjava3:rxjava", version.ref = "rxjava" }
+utilcodex = { module = "com.blankj:utilcodex", version.ref = "utilcodex" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-appcompat-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidxAppcompat" }
+
+[plugins]
+#android-library = { id = "com.android.library", version.ref = "agp" }
+
