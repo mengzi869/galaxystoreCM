@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "350199145415",
+    "project_id": "cleanmaster-e0a81",
+    "storage_bucket": "cleanmaster-e0a81.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350199145415:android:a49fabb088d660b2202fe2",
+        "android_client_info": {
+          "package_name": "com.jcbw.clean888.cleansuper"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXXb4Bs_pO4B5fTLkjVJbpl30T6gydDn4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
