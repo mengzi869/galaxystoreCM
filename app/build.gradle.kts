@@ -1,6 +1,9 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android") version "1.8.0"
+    // Add the Google services Gradle plugin
+    id("com.google.gms.google-services")
+    id("com.google.firebase.crashlytics")
 }
 //repositories {
 //    google()
@@ -125,5 +128,12 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
 //    implementation(project(":overseas-support"))
+
+    // Import the Firebase BoM
+    implementation(platform("com.google.firebase:firebase-bom:32.1.0"))
+    // When using the BoM, don't specify versions in Firebase dependencies
+    implementation("com.google.firebase:firebase-analytics:22.1.0")
+    implementation("com.google.firebase:firebase-crashlytics:18.3.7")
+
 
 }
