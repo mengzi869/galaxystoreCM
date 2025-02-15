@@ -32,6 +32,9 @@ dependencyResolutionManagement {
         maven ("https://artifact.bytedance.com/repository/pangle")
         //Mintegral
         maven ("https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea")
+        //Chartboost
+        maven ("https://cboost.jfrog.io/artifactory/chartboost-ads")
+        maven ("https://cboost.jfrog.io/artifactory/chartboost-mediation")
 
         google()
         mavenCentral()
@@ -41,4 +44,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "CleanMaster"
 include(":app")
-//include(":overseas-support")
+include(":overseas-support")

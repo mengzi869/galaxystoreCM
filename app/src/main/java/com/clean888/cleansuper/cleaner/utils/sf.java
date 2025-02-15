@@ -75,7 +75,7 @@ public class sf {
         this.d = true;
         this.e = true;
         this.f = true;
-        this.f2044g = false;//
+        this.f2044g = true;//
         this.h = true;
         boolean z =true;
         this.i = z;

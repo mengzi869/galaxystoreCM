@@ -171,7 +171,7 @@ public class HomeFragment extends BAFU implements View.OnClickListener{
         this.fullAnim = d;
         d.d(0L);
 
-        this.binding.cardWallpaper.setVisibility(View.INVISIBLE);
+        this.binding.cardWallpaper.setVisibility(View.VISIBLE);
         this.binding.cleanBtn.setOnClickListener(this);
         this.binding.cleanBtn.setSelected(false);
         this.binding.cleanBtnY.setOnClickListener(this);
@@ -324,7 +324,7 @@ public class HomeFragment extends BAFU implements View.OnClickListener{
         }
 //        i4.a().i("s_index").commit();
         refreshRedDot();
-        this.binding.cardWallpaper.setVisibility(a_mmkv.h().w() ? View.VISIBLE : View.GONE);
+//        this.binding.cardWallpaper.setVisibility(a_mmkv.h().w() ? View.VISIBLE : View.GONE);
     }
 
     @Override // androidx.fragment.app.Fragment

@@ -100,3 +100,64 @@
 
 #应用不在 Google Play 商店发布，请添加下列规则：
 -keep public class com.adjust.sdk.** { *; }
+
+
+
+
+-keepclassmembers class com.ironsource.sdk.controller.IronSourceWebView$JSInterface {
+    public *;
+}
+-keepclassmembers class * implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+-keep public class com.google.android.gms.ads.** {
+   public *;
+}
+-keep class com.ironsource.adapters.** { *;
+}
+-dontwarn com.ironsource.mediationsdk.**
+-dontwarn com.ironsource.adapters.**
+-keepattributes JavascriptInterface
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+}
+-keep class com.bytedance.sdk.** { *; }
+-keep class com.inmobi.** { *; }
+-keep public class com.google.android.gms.**
+-dontwarn com.google.android.gms.**
+-dontwarn com.squareup.picasso.**
+-keep class com.google.android.gms.ads.identifier.AdvertisingIdClient{
+     public *;
+}
+-keep class com.google.android.gms.ads.identifier.AdvertisingIdClient$Info{
+     public *;
+}
+# skip the Picasso library classes
+-keep class com.squareup.picasso.** {*;}
+-dontwarn com.squareup.okhttp.**
+# skip Moat classes
+-keep class com.moat.** {*;}
+-dontwarn com.moat.**
+# skip IAB classes
+-keep class com.iab.** {*;}
+-dontwarn com.iab.**
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class com.mbridge.** {*; }
+-keep interface com.mbridge.** {*; }
+-keep class android.support.v4.** { *; }
+-dontwarn com.mbridge.**
+-keep class **.R$* { public static final int mbridge*; }
+-keep public class com.mbridge.* extends androidx.** { *; }
+-keep public class androidx.viewpager.widget.PagerAdapter{ *; }
+-keep public class androidx.viewpager.widget.ViewPager.OnPageChangeListener{ *; }
+-keep interface androidx.annotation.IntDef{ *; }
+-keep interface androidx.annotation.Nullable{ *; }
+-keep interface androidx.annotation.CheckResult{ *; }
+-keep interface androidx.annotation.NonNull{ *; }
+-keep public class androidx.fragment.app.Fragment{ *; }
+-keep public class androidx.core.content.FileProvider{ *; }
+-keep public class androidx.core.app.NotificationCompat{ *; }
+-keep public class androidx.appcompat.widget.AppCompatImageView { *; }
+-keep public class androidx.recyclerview.*{ *; }
+-keep class com.chartboost.** { *; }

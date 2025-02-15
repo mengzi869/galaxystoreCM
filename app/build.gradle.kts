@@ -20,9 +20,9 @@ android {
     defaultConfig {
         applicationId = "com.jcbw.clean888.cleansuper"//包名不要动；string.xml里面的账号组件名称要对应修改；
         minSdk = 24
-        targetSdk = 33
-        versionCode = 1
-        versionName = "1.0"
+        targetSdk = 34
+        versionCode = 2
+        versionName = "1.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -108,7 +108,7 @@ dependencies {
     implementation(libs.com.airbnb.android.lottie3)
     implementation("io.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.10")
     implementation(libs.live.event.bus)
-    implementation(libs.json)
+//    implementation(libs.json)
     implementation(libs.androidx.room.runtime)
     annotationProcessor("androidx.room:room-compiler:2.5.1")
 
@@ -127,7 +127,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-//    implementation(project(":overseas-support"))
+    implementation(project(":overseas-support"))
 
     // Import the Firebase BoM
     implementation(platform("com.google.firebase:firebase-bom:32.1.0"))

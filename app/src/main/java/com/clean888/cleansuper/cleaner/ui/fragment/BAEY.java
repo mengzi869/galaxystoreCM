@@ -22,6 +22,7 @@ import com.clean888.cleansuper.cleaner.ui.fragment.result.BAES;
 import com.clean888.cleansuper.cleaner.ui.fragment.result.BAEU;
 import com.clean888.cleansuper.cleaner.utils.a_NotificationUtils;
 import com.clean888.cleansuper.cleaner.ui.dialog.pf;
+import com.clean888.overseas.topon.InterstitialAdHelper;
 
 import java.util.HashMap;
 
@@ -78,6 +79,7 @@ public class BAEY extends BaseFragment implements Animator.AnimatorListener, Vie
                 BAES newInstance = BAES.newInstance(this.type);
                 newInstance.setShowEvaluate(z2);
                 if (!z2) {
+                    InterstitialAdHelper.getInstance().showInterstitialAd(requireActivity(),null);
 //                    if (zh.d()) {
 //                        zh.f(hashMap);
 //                    } else {

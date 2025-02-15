@@ -18,6 +18,13 @@ import com.clean888.cleansuper.cleaner.ui.MainActivity;
 import com.clean888.cleansuper.cleaner.ui.SplashActivity;
 import com.clean888.cleansuper.cleaner.utils.AboutSplash.sh;
 import com.clean888.cleansuper.cleaner.ui.ViewModel.BAFF;
+import com.clean888.overseas.topon.InterstitialAdHelper;
+import com.clean888.overseas.util.adCallback;
+import com.clean888.overseas.util.y3;
+
+import org.jetbrains.annotations.NotNull;
+
+import java.util.HashMap;
 
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
@@ -102,7 +109,45 @@ public class BAFI extends BaseFragment{
         this.binding.progressBar.setProgress(((Integer) valueAnimator.getAnimatedValue()).intValue());
     }
 
+    private adCallback mAdCallback = new adCallback() {
+        @Override
+        public void onAdClicked(@NotNull y3 y3Var) {
+
+        }
+
+        @Override
+        public void onAdClose(@NotNull y3 y3Var) {
+            goMain();
+        }
+
+        @Override
+        public void onAdLoadFailed(@NotNull y3 y3Var) {
+
+        }
+
+        @Override
+        public void onAdLoaded(@NotNull y3 y3Var) {
+
+        }
+
+        @Override
+        public void onAdShow(@NotNull y3 y3Var) {
+
+        }
+
+        @Override
+        public void onAdShowFailed(@NotNull y3 y3Var) {
+
+        }
+
+        @Override
+        public void onLoadingClose(int i) {
+
+        }
+    };
+
     private void loadAd() {
+        InterstitialAdHelper.getInstance().load(getActivity());
 //        b bVar = new b();
 //        uh.b(this, bVar);
 //        if (!uh.f()) {
@@ -139,7 +184,10 @@ public class BAFI extends BaseFragment{
 //        if (i2) {
 //            return;
 //        }
-        goMain();
+        //展示广告
+        if(!InterstitialAdHelper.getInstance().showInterstitialAd(getActivity(),mAdCallback)){
+            goMain();
+        }
     }
 
     void goMain() {

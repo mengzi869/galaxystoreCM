@@ -1,5 +1,6 @@
 [versions]
 androidxFragmentFragment = "1.8.5"
+androidxWorkRuntimeKtx = "2.8.1"
 comAirbnbAndroidLottie2 = "6.6.0"
 gson = "2.10.1"
 json = "20240303"
@@ -23,6 +24,7 @@ androidxAppcompat = "1.7.0"
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-fragment-fragment3 = { module = "androidx.fragment:fragment", version.ref = "androidxFragmentFragment" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+androidx-work-work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "androidxWorkRuntimeKtx" }
 com-airbnb-android-lottie3 = { module = "com.airbnb.android:lottie", version.ref = "comAirbnbAndroidLottie2" }
 google-material = { module = "com.google.android.material:material", version.ref = "materialVersion" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }

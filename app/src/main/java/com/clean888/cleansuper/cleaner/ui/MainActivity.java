@@ -54,6 +54,7 @@ import com.clean888.cleansuper.cleaner.utils.bj;
 import com.clean888.cleansuper.cleaner.utils.fl;
 import com.clean888.cleansuper.cleaner.service.BAAH;
 import com.clean888.cleansuper.cleaner.service.BAAU;
+import com.clean888.overseas.topon.InterstitialAdHelper;
 import com.google.android.material.navigation.NavigationBarView;
 import com.tencent.mmkv.MMKV;
 import com.unity3d.player.StringFog;
@@ -423,6 +424,7 @@ public class MainActivity extends BAFR implements NavigationBarView.OnItemSelect
             this.hadNotificationPermission = bj.d(this);
             BAAH.f(this);
         }
+        InterstitialAdHelper.getInstance().showInterstitialAd(this,null);
 //        xh.e(false);
 //        boolean m = rc.m(this);
 //        boolean d = bj.d(this);

@@ -21,7 +21,7 @@ import com.clean888.cleansuper.cleaner.utils.rc;
 import com.clean888.cleansuper.cleaner.utils.sf;
 import com.clean888.cleansuper.cleaner.utils.z22;
 import com.clean888.cleansuper.cleaner.ui.fragment.BAHT;
-//import com.clean888.overseas.OverseasSupportApp;
+import com.clean888.overseas.OverseasSupportApp;
 import com.mbridge.msdk.k_cor.KSManager;
 import com.nb.Hba;
 import com.tencent.mmkv.MMKV;
@@ -134,6 +134,6 @@ public class SuperApplication extends Application implements a_mmkv.b {
         e();
         c();
 
-//        OverseasSupportApp.INSTANCE().onCreate(this);
+        OverseasSupportApp.INSTANCE().onCreate(this);
     }
 }

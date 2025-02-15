@@ -19,6 +19,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import com.clean888.overseas.Constants;
+import com.clean888.overseas.util.adCallback;
+import com.clean888.overseas.util.y3;
 public class InterstitialAdHelper {
     private static final String TAG = "InterstitialAdHelper";
     private String AD_UNIT_ID = Constants.AD_TOPON_INTER_ID;
@@ -33,6 +35,7 @@ public class InterstitialAdHelper {
 
     private Activity mActivity;
 
+    private adCallback mAdCallback;
 
     private ATInterstitialListener attInterstitialListener;
 
@@ -102,7 +105,7 @@ public class InterstitialAdHelper {
 
     }
 
-    public boolean showInterstitialAd(Activity act) {
+    public boolean showInterstitialAd(Activity act,adCallback mAdCallback) {
         this.mActivity = act;
         if (attInterstitialAd == null) {
             load(act);
@@ -115,7 +118,9 @@ public class InterstitialAdHelper {
                     //TODO 价值回传，各个平台的广告价值回传
                     handleAdjustRevenueReport(atAdInfo);
                 });
+                this.mAdCallback = mAdCallback;
                 attInterstitialAd.show(act);
+                return true;
             } else {
                 load(act);
             }
@@ -210,13 +215,12 @@ public class InterstitialAdHelper {
             interstitialIsLoading.set(i);
             retryAttemptInter.set(0);
             ThreadUtils.mMainHandler.removeCallbacks(delayFailCallback);
-
         }
 
         @Override
         public void onInterstitialAdLoadFail(AdError adError) {
             //TODO 暂时这样写，重试机制，后续测试看效果，如果效果不好，去除改重试机制
-            Log.d(TAG, "onAdLoadFailed..." + adError.toString());
+//            Log.d(TAG, "onAdLoadFailed..." + adError.getPlatformMSG());
             if (retryAttemptInter == null) {
                 retryAttemptInter = new AtomicInteger(0);
             }
@@ -242,6 +246,9 @@ public class InterstitialAdHelper {
         public void onInterstitialAdClose(ATAdInfo atAdInfo) {
             Log.d(TAG, "onAdHidden...");
             loadInterstitial();
+            if(mAdCallback != null){
+                mAdCallback.onAdClose(new y3(atAdInfo.getAdsourceId(),atAdInfo.getEcpm(),0));
+            }
         }
 
         @Override
