@@ -88,6 +88,7 @@ public class MainActivity extends BAFR implements NavigationBarView.OnItemSelect
     public static final String PAGE = "page";
     public static final int SETTING = 6;
     public static final String VALUE = "value";
+    public static int nResume = 0;
     private String analyRearch;
     private ActivityMainBinding binding;
     private Intent checkSDPerJumpIntent;
@@ -424,7 +425,15 @@ public class MainActivity extends BAFR implements NavigationBarView.OnItemSelect
             this.hadNotificationPermission = bj.d(this);
             BAAH.f(this);
         }
-        InterstitialAdHelper.getInstance().showInterstitialAd(this,null);
+
+        nResume++;
+        Log.e("showad","mainActivity onResume " + nResume);
+        if(nResume >= 3){
+            if(InterstitialAdHelper.getInstance().showInterstitialAd(this,null)){
+                Log.e("showad","mainActivity onResume showad");
+                nResume = 0;
+            }
+        }
 //        xh.e(false);
 //        boolean m = rc.m(this);
 //        boolean d = bj.d(this);

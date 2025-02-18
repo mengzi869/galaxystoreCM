@@ -80,6 +80,7 @@ public class BAEY extends BaseFragment implements Animator.AnimatorListener, Vie
                 newInstance.setShowEvaluate(z2);
                 if (!z2) {
                     InterstitialAdHelper.getInstance().showInterstitialAd(requireActivity(),null);
+                    Log.e("showad","nextPage");
 //                    if (zh.d()) {
 //                        zh.f(hashMap);
 //                    } else {

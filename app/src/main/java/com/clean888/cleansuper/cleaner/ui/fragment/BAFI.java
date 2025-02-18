@@ -6,6 +6,7 @@ import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -164,6 +165,7 @@ public class BAFI extends BaseFragment{
         return new BAFI();
     }
 
+    private static int nCount = 0;
     void checkShowAd() {
 //        th.a("启动页", new c());
 //        if (uh.f()) {
@@ -185,9 +187,18 @@ public class BAFI extends BaseFragment{
 //            return;
 //        }
         //展示广告
-        if(!InterstitialAdHelper.getInstance().showInterstitialAd(getActivity(),mAdCallback)){
+        nCount++;
+        Log.e("showad","goMain() " + nCount);
+        if(nCount <= 3){
             goMain();
+            return;
         }
+        if(!InterstitialAdHelper.getInstance().showInterstitialAd(getActivity(),mAdCallback)){
+            Log.e("showad","splashActivity goMain");
+            goMain();
+            return;
+        }
+        nCount = 0;
     }
 
     void goMain() {
