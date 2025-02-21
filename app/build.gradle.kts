@@ -130,9 +130,10 @@ dependencies {
     implementation(project(":overseas-support"))
 
     // Import the Firebase BoM
-    implementation(platform("com.google.firebase:firebase-bom:33.9.0"))
+    //noinspection UseTomlInstead
+    implementation(platform("com.google.firebase:firebase-bom:32.1.0"))
     // When using the BoM, don't specify versions in Firebase dependencies
-    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-analytics:22.1.0")
     implementation(libs.google.firebase.crashlytics)
 
 
