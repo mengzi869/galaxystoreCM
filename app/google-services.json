@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "350199145415",
-    "project_id": "cleanmaster-e0a81",
-    "storage_bucket": "cleanmaster-e0a81.firebasestorage.app"
+    "project_number": "181012060627",
+    "project_id": "cleanmaster-sumsung-25-jan",
+    "storage_bucket": "cleanmaster-sumsung-25-jan.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:350199145415:android:a49fabb088d660b2202fe2",
+        "mobilesdk_app_id": "1:181012060627:android:261dd4d513300e2bdef726",
         "android_client_info": {
           "package_name": "com.jcbw.clean888.cleansuper"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBXXb4Bs_pO4B5fTLkjVJbpl30T6gydDn4"
+          "current_key": "AIzaSyAQTyNGiZghy_2b_AQKR87e71l9zihTHGo"
         }
       ],
       "services": {
