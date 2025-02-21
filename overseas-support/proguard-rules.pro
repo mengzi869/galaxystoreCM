@@ -161,3 +161,11 @@
 -keep public class androidx.appcompat.widget.AppCompatImageView { *; }
 -keep public class androidx.recyclerview.*{ *; }
 -keep class com.chartboost.** { *; }
+
+
+# Vungle
+-dontwarn com.vungle.ads.**
+-keepclassmembers class com.vungle.ads.** {
+  *;
+}
+-keep class com.vungle.ads.**

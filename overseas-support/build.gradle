@@ -116,6 +116,10 @@ dependencies {
     api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1"
     api "org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1"
 
+    //Vungle
+    api "com.anythink.sdk:adapter-tpn-vungle:6.4.39.1"
+    api "com.vungle:vungle-ads:7.4.3"
+
     //Yandex
     api "com.anythink.sdk:adapter-tpn-yandex:6.4.39"
     api "com.yandex.android:mobileads:7.8.1"
