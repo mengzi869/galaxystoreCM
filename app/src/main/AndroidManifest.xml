@@ -96,7 +96,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="ca-app-pub-6236994165302710~8862612662"/>
 
         <activity
             android:name="com.clean888.cleansuper.cleaner.ui.activity.ZZS"
